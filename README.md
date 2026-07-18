@@ -34,24 +34,27 @@ General_Claude_code_usage_tips/
 │   │   ├── USAGE_EXPLANATION.md
 │   │   └── General_Claude_code_usage_tips.md
 │   ├── codex/
+│   │   ├── USAGE_EXPLANATION.md
+│   │   └── General_Codex_usage_tips.md
 │   └── gemini-cli/
+│       ├── USAGE_EXPLANATION.md
+│       └── General_Gemini_usage_tips.md
 ├── scripts/
 │   ├── statusline/
 │   │   └── statusline.sh
 │   └── hooks/
+│       └── gemini-log-tool-use.sh
 ├── LICENSE
 └── README.md
 ```
-
-*(Adjust this tree to match your actual folder layout as the repo grows — this is a starting scaffold.)*
 
 ## Tools covered
 
 | Tool | Maker | Status |
 | --- | --- | --- |
 | Claude Code | Anthropic | ✅ Actively covered |
-| Codex CLI | OpenAI | 🚧 In progress |
-| Gemini CLI | Google | 🚧 In progress |
+| Codex CLI | OpenAI | ✅ Actively covered |
+| Gemini CLI | Google | ✅ Actively covered |
 | Aider / Cursor / other agents | Various | 🙌 Contributions welcome |
 
 ## Quick start
