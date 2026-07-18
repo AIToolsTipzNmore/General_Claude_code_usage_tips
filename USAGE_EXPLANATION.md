@@ -4,20 +4,19 @@ Markdown
 When you view your active consumption metrics inside Claude Code, your performance is audited across dynamic resource layers. Below is an architectural breakdown of exactly how those metrics are calculated:
 
 ### The Token Allocation Core
-
 ┌─────────────────────────────────────────────────────────────┐
 │ Total Session Input Payload                                 │
 ├──────────────────────────────┬──────────────────────────────┤
 │ 📥 Fresh Prompt Input        │ 💾 Cached Context Reads      │
-│ (142 Tokens)                 │ (5.3 Million Tokens)         │
+│ (e.g., 142 Tokens)           │ (e.g., 5.3 Million Tokens)   │
 └──────────────────────────────┴──────────────────────────────┘
 │
 ▼
 ┌─────────────────────────────────────────────────────────────┐
 │ 📤 Session Output Generation                                │
 ├─────────────────────────────────────────────────────────────┤
-│ (385 Tokens)                                                │
-└─────────────────────────────────────────────────────────────┘
+│ (e.g., 385 Tokens)                                          │
+└─────────────────────────────────────────────────────────────┘────────────────────────────────────────────────────────┘
 
 
 #### 💾 Prompt Cache Reads (`5.3M cache read` vs `124.1k cache write`)
