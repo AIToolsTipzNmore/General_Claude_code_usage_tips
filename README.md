@@ -4,7 +4,7 @@
 
 **Practical tips, guides, and scripts for getting the most out of AI coding agents.**
 
-Claude Code · Codex CLI · Gemini CLI · and whatever ships next
+Claude Code · Codex CLI · Gemini CLI · OpenClaw · Hermes Agent · and whatever ships next
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](#contributing)
@@ -16,7 +16,7 @@ Claude Code · Codex CLI · Gemini CLI · and whatever ships next
 
 ## Why "ClaudeTips"?
 
-This repo started as a scratchpad of Claude Code notes — and the name stuck. But the tips, scripts, and configs here aren't Claude-exclusive. Usage quotas, context management, statuslines, sub-agent patterns, and hook scripting are problems shared by every terminal-based AI coding agent, so this repo has grown to cover Claude Code, OpenAI's Codex CLI, Google's Gemini CLI, and others as they show up. Think of "ClaudeTips" as the repo's origin story, not its ceiling.
+This repo started as a scratchpad of Claude Code notes — and the name stuck. But the tips, scripts, and configs here aren't Claude-exclusive. Usage quotas, context management, statuslines, sub-agent patterns, and hook scripting are problems shared by every terminal-based AI agent, so this repo has grown to cover Claude Code, OpenAI's Codex CLI, Google's Gemini CLI, the self-hosted OpenClaw assistant, NousResearch's Hermes Agent, and others as they show up. Think of "ClaudeTips" as the repo's origin story, not its ceiling.
 
 ## What's inside
 
@@ -24,6 +24,7 @@ This repo started as a scratchpad of Claude Code notes — and the name stuck. B
 - 🛠️ **Scripts** — statusline engines, hooks, handoff/checkpoint utilities, and other drop-in automation.
 - 🤖 **Agent-specific playbooks** — the quirks, flags, and config files unique to each CLI.
 - ✅ **Battle-tested patterns** — sub-agent fan-out, plan-mode dry runs, prompt caching strategies, and more.
+- 🧩 **Curated skills directory** — hand-picked picks from [skills.sh](https://www.skills.sh/) and [ClawHub](https://docs.openclaw.ai/clawhub), the two big cross-agent skill registries.
 
 ## Repository structure
 
@@ -36,9 +37,17 @@ General_Claude_code_usage_tips/
 │   ├── codex/
 │   │   ├── USAGE_EXPLANATION.md
 │   │   └── General_Codex_usage_tips.md
-│   └── gemini-cli/
-│       ├── USAGE_EXPLANATION.md
-│       └── General_Gemini_usage_tips.md
+│   ├── gemini-cli/
+│   │   ├── USAGE_EXPLANATION.md
+│   │   └── General_Gemini_usage_tips.md
+│   ├── openclaw/
+│   │   ├── USAGE_EXPLANATION.md
+│   │   └── General_OpenClaw_usage_tips.md
+│   ├── hermes/
+│   │   ├── USAGE_EXPLANATION.md
+│   │   └── General_Hermes_usage_tips.md
+│   └── skills-directory/
+│       └── CURATED_SKILLS.md
 ├── scripts/
 │   ├── statusline/
 │   │   └── statusline.sh
@@ -55,7 +64,13 @@ General_Claude_code_usage_tips/
 | Claude Code | Anthropic | ✅ Actively covered |
 | Codex CLI | OpenAI | ✅ Actively covered |
 | Gemini CLI | Google | ✅ Actively covered |
+| OpenClaw | Open-source (self-hosted) | ✅ Actively covered |
+| Hermes Agent | NousResearch | ✅ Actively covered |
 | Aider / Cursor / other agents | Various | 🙌 Contributions welcome |
+
+## Curated Skills Directory
+
+Beyond agent-specific guides, [`guides/skills-directory/CURATED_SKILLS.md`](guides/skills-directory/CURATED_SKILLS.md) is a hand-picked shortlist pulled from [skills.sh](https://www.skills.sh/) (Vercel's cross-agent skills directory) and [ClawHub](https://docs.openclaw.ai/clawhub) (OpenClaw's official skill registry) — dev-workflow-focused picks like TDD drivers, code-review dispatchers, Vercel deploy skills, Kubernetes/AWS helpers, and more, with install commands for each ecosystem.
 
 ## Quick start
 
