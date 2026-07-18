@@ -28,7 +28,7 @@ This repo started as a scratchpad of Claude Code notes — and the name stuck. B
 ## Repository structure
 
 ```
-claudetips/
+General_Claude_code_usage_tips/
 ├── guides/
 │   ├── claude-code/
 │   │   ├── USAGE_EXPLANATION.md
@@ -57,8 +57,8 @@ claudetips/
 ## Quick start
 
 ```bash
-git clone https://github.com/your-username/claudetips.git
-cd claudetips
+git clone https://github.com/AIToolsTipzNmore/General_Claude_code_usage_tips.git
+cd General_Claude_code_usage_tips
 
 # Make any shell scripts executable before use
 chmod +x scripts/statusline/*.sh
