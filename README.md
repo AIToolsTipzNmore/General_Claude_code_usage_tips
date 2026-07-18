@@ -1,0 +1,80 @@
+<div align="center">
+
+# ⚡ ClaudeTips
+
+**Practical tips, guides, and scripts for getting the most out of AI coding agents.**
+
+Claude Code · Codex CLI · Gemini CLI · and whatever ships next
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](#contributing)
+[![Made for terminal nerds](https://img.shields.io/badge/made%20for-terminal%20nerds-blue)](#)
+
+</div>
+
+---
+
+## Why "ClaudeTips"?
+
+This repo started as a scratchpad of Claude Code notes — and the name stuck. But the tips, scripts, and configs here aren't Claude-exclusive. Usage quotas, context management, statuslines, sub-agent patterns, and hook scripting are problems shared by every terminal-based AI coding agent, so this repo has grown to cover Claude Code, OpenAI's Codex CLI, Google's Gemini CLI, and others as they show up. Think of "ClaudeTips" as the repo's origin story, not its ceiling.
+
+## What's inside
+
+- 📘 **Guides** — deep dives on token usage, quota mechanics, auto-compaction, context rot, and cost optimization.
+- 🛠️ **Scripts** — statusline engines, hooks, handoff/checkpoint utilities, and other drop-in automation.
+- 🤖 **Agent-specific playbooks** — the quirks, flags, and config files unique to each CLI.
+- ✅ **Battle-tested patterns** — sub-agent fan-out, plan-mode dry runs, prompt caching strategies, and more.
+
+## Repository structure
+
+```
+claudetips/
+├── guides/
+│   ├── claude-code/
+│   │   ├── USAGE_EXPLANATION.md
+│   │   └── General_Claude_code_usage_tips.md
+│   ├── codex/
+│   └── gemini-cli/
+├── scripts/
+│   ├── statusline/
+│   │   └── statusline.sh
+│   └── hooks/
+├── LICENSE
+└── README.md
+```
+
+*(Adjust this tree to match your actual folder layout as the repo grows — this is a starting scaffold.)*
+
+## Tools covered
+
+| Tool | Maker | Status |
+| --- | --- | --- |
+| Claude Code | Anthropic | ✅ Actively covered |
+| Codex CLI | OpenAI | 🚧 In progress |
+| Gemini CLI | Google | 🚧 In progress |
+| Aider / Cursor / other agents | Various | 🙌 Contributions welcome |
+
+## Quick start
+
+```bash
+git clone https://github.com/your-username/claudetips.git
+cd claudetips
+
+# Make any shell scripts executable before use
+chmod +x scripts/statusline/*.sh
+```
+
+Browse `guides/<tool>/` for write-ups, or drop a script from `scripts/` straight into your own `~/.claude`, `~/.codex`, or equivalent config directory.
+
+## Contributing
+
+Found a trick that saves tokens, a config that fixes a footgun, or a script worth sharing? PRs are welcome.
+
+1. Fork the repo
+2. Add your guide or script under the relevant tool folder (or create a new one)
+3. Keep guides concise and scripts commented — future-you will thank you
+4. Open a pull request with a short description of what it does and why it's useful
+
+## License
+
+Released under the [MIT License](LICENSE) — use it, fork it, ship it.
